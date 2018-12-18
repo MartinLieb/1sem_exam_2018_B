@@ -6,7 +6,9 @@ public class MediaManager {
 
     // Her kommer din kode
 
-    public static void logMediaFolder(String folderNavn){
+    // Metode som laver et array der indeholder alle filnavne fra mappen "media"
+    // derefter printer metoden alle filnavnene ved brug af en for løkke
+    public static void readMediaFolder(String folderNavn){
         File folder = new File("C:\\Users\\Pessi\\Documents\\GitHub\\1sem_exam_2018_B\\media");
         File[] listOfFiles = folder.listFiles();
 
