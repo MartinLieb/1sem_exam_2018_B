@@ -66,4 +66,5 @@ public class Media {
     public void logToConsol(){
         System.out.println(this.name + " " + "media");
     }
+
 }
