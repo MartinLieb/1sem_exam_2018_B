@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.MediaName;
 import java.io.File;
 import java.time.Instant;
 import java.util.Date;
@@ -60,5 +61,9 @@ public class Media {
                 ", created=" + created +
                 ", fileName='" + fileName + '\'' +
                 '}';
+    }
+
+    public void logToConsol(){
+        System.out.println(this.name + " " + "media");
     }
 }
