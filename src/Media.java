@@ -4,17 +4,21 @@ import java.util.Date;
 
 public class Media {
 
+    // her deklareres variablerne assetId, name, created og fileName
+    // variablerne sættes til private og kræver derfor getters og setters for kunne blive kaldt i andre klasser
     private int assetId;
     private String name;
     private Date created = new Date();
     private String fileName;
 
 
+    // her oprettes en constructor til "Media" som med det samme tilføjer et ID og dato for oprettelse
     public Media() {
         assetId = MediaID.generate();
         created = Date.from(Instant.now());
     }
 
+    // her ses getters og setters til alle klassens variabler
     public int getAssetId() {
         return assetId;
     }
@@ -47,6 +51,7 @@ public class Media {
         this.fileName = fileName;
     }
 
+    // her oprettes en metode som samler alle variablerne fra klassen i en string
     @Override
     public String toString() {
         return "Media{" +

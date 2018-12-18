@@ -10,9 +10,11 @@ import java.util.Scanner;
  */
 public class MediaID {
 
+    // her deklareres variablen latestId til 100
     private static int latestId = 100;
 
 
+    // her oprettes en metode som opretter en ny text fil
     public static int generate() {
 
         File file = new File("media_id.txt");
